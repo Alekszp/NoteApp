@@ -4,13 +4,34 @@
   "description": "notes app",
   "main": "webpack.config.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webpack-dvs": "webpack-dev-server --debug --hot --devtool eval-source-map --output-pathinfo --watch --colors --inline --content-base public --port 8090 --host 0.0.0.0"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@babel/core": "^7.2.2",
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
-    "mongoose": "^5.3.14"
+    "less": "^3.9.0",
+    "mongoose": "^5.3.14",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  },
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.4",
+    "css-loader": "^2.0.1",
+    "file-loader": "^2.0.0",
+    "image-webpack-loader": "^4.6.0",
+    "json-loader": "^0.5.7",
+    "less-loader": "^4.1.0",
+    "react-hot-loader": "^4.6.2",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.28.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.10"
   }
 }
